@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -exou pipefail
+#### Install some dependencies
+sudo apt-get install git gawk qpdf adb flex bison 
+#### Only necassary for x86_64 systems
+sudo dpkg --add-architecture i386 
+sudo apt-get update
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 
+#### Clone Nexmon repository
+git clone https://github.com/seemoo-lab/nexmon.git
+sudo chmod 777 /home/${USER}/nexmon
+#### Enter Nexmon directory /home/your-username/nexmon
+cd nexmon
+#### Prep build 
+source setup_env.sh
+#### Build
+make
+
+
