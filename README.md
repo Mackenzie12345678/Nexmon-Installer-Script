@@ -1,10 +1,10 @@
 This bash script installs Nexmon
-####################################################################
+################################################################################################################
 Instructions:
 Place "nexmoninstaller" file in home (/home/)
 Run in terminal sudo ./nexmoninstaller (sudo is mandatory)
 
-###################################################################
+###################################################################################################################
 This is what the file does
 
 Install some dependencies: sudo apt-get install git gawk qpdf adb flex bison
