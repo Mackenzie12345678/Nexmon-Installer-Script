@@ -12,7 +12,7 @@ For x86_64 systems, install i386 libs:
 sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
-Clone our repository: git clone https://github.com/seemoo-lab/nexmon.git
+Clone there repository: git clone https://github.com/seemoo-lab/nexmon.git
 Chmod 777 nexmon directory
 In the root directory of the repository: cd nexmon
 Setup the build environment: source setup_env.sh
